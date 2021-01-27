@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
+import "./css/image.css"
 
 const Navbar =()=>{
     return(
-        <div className="d-flex flex-row py-2" style={{height:"20%",backgroundColor:"grey"}}>
-            <h4 className="">MUKUL PRASAD</h4>
+        <div className="navbar d-flex flex-row py-2 justify-content-between">
+            <h4 className="logo">MUKUL PRASAD</h4>
             <div className="d-flex justify-content-center">
                 <div className="d-flex flex-row justify-content-between">
                     <li><Link to="/">Home</Link></li>
@@ -13,6 +14,7 @@ const Navbar =()=>{
                     <li><Link to="/resume">Resume</Link></li>
                 </div>
             </div>
+            <button className="btn1 btn">contact me</button>
         </div>
     )
 }
